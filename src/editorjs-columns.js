@@ -46,7 +46,7 @@ class EditorJsColumns {
 		if (!this.readOnly) {
 			this.onKeyUp = this.onKeyUp.bind(this);
 		}
-		
+
 
 
 		this._data = {};
@@ -209,8 +209,8 @@ class EditorJsColumns {
 		// astops the double paste issue
 		this.colWrapper.addEventListener('paste', (event) => {
 			// event.preventDefault();
-			event.stopPropagation();
-		}, true);   
+			// event.stopPropagation();
+		}, true);
 
 
 
@@ -226,12 +226,12 @@ class EditorJsColumns {
 
 			// 	// console.log(b)
 			// }
-			// else 
+			// else
 			if (event.key === "Enter") {
 				event.preventDefault();
 				event.stopImmediatePropagation();
 				event.stopPropagation();
-				
+
 				// console.log("ENTER Captured")
 				// this.api.blocks.insertNewBlock({type : "alert"});
 				// console.log("Added Block")
@@ -241,7 +241,7 @@ class EditorJsColumns {
 				event.preventDefault();
 				event.stopImmediatePropagation();
 				event.stopPropagation();
-				
+
 				// console.log("TAB Captured")
 			}
 		});
